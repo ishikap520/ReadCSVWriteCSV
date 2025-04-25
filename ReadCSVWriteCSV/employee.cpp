@@ -13,7 +13,7 @@ void employee::ReadFromFile()
 void employee::AddToRow(string t)
 {
     //this->temp = t;
-    temp.push_back(line);
+    temp.push_back(t);
 }
 void employee::AddToLine()
 {
