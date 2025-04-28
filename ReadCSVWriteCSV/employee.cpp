@@ -27,9 +27,17 @@ void employee::WriteToFile()
         while (getline(empin, line))
         {
             stringstream gust(line);
-            while (getline(gust, word))
+            while (getline(gust, word,","))
             {
-                empout << setw(17) << word;
+                for (int i = 0; i <= emp.size(); i++)
+                {
+                    for (int j = 0; j <= temp[i].size(); j++)
+                    {
+                        empout << emp[i][j] << " " << temp[i][j - 1];
+                    }
+                }
+                empout << setw(50) << word;
+
             }
             empout << endl;
         }
