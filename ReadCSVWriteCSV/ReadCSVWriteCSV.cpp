@@ -7,11 +7,8 @@ int main()
     ofstream empout;
     string in;
     string out;
-    string line;
-    string sentence, lastname, firstname, position, location;
-    int age;
-    vector<string> temp;
-    vector<vector<string>> emp;
+    string line, row, word;
+    string sentence;
     cout << "Enter the Input CSV Filename ==> ";
     cin >> in;
     cout << "Enter the Output CSV Filename ==> ";
@@ -20,6 +17,10 @@ int main()
     e1.ReadFromFile();
     e1.AddToRow(line);
     e1.AddToLine();
+    if (sentence == row[0], row[1])
+    {
+        empout << row[1] << " " << row[0] << word;
+    }
     e1.WriteToFile();
     e1.CloseFiles();
 }
